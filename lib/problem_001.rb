@@ -13,7 +13,7 @@ class Problem001
   end
   
   def solve_for(*numbers)
-    matches = numbers.collect { |n| multiples_of(n) }
-    matches.flatten.inject { |sum, i| sum + i }
+    matches = multiples_of(*numbers)
+    matches.inject { |sum, i| sum + i }
   end
 end

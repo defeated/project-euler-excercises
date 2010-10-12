@@ -41,6 +41,6 @@ describe Problem001 do
   
   it "solves up to 1000" do
     problem = Problem001.new(1000)
-    problem.solve_for(3, 5).should == 266333
+    problem.solve_for(3, 5).should == 233168
   end
 end
