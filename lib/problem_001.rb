@@ -2,8 +2,8 @@ class Problem001
   attr_reader :max, :range
   
   def initialize(max = 1000)
-    @max = max
-    @range = (1...max).to_a
+    @max    = max
+    @range  = (1...max).to_a
   end
   
   def multiples_of(*numbers)
@@ -13,7 +13,6 @@ class Problem001
   end
   
   def solve_for(*numbers)
-    matches = multiples_of(*numbers)
-    matches.inject { |sum, i| sum + i }
+    multiples_of(*numbers).inject { |sum, i| sum + i }
   end
 end
